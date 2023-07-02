@@ -23,7 +23,7 @@
         "webservco"
     ],
     "license" : "MIT",
-    "name" : "webservco/component",
+    "name" : "webservco/exception",
     "require-dev": {
         "pds/skeleton": "^1",
         "phan/phan": "^5",
