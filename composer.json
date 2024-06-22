@@ -25,7 +25,7 @@
     "license" : "MIT",
     "name" : "webservco/exception",
     "require": {
-        "php" : "^8.2",
+        "php" : "^8.3",
         "psr/log": "^3"
     },
     "require-dev": {
