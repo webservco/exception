@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace WebServCo\Exception\Factory;
 
+use Override;
 use Psr\Log\LoggerInterface;
 use WebServCo\Exception\Contract\ExceptionHandlerFactoryInterface;
 use WebServCo\Exception\Contract\ExceptionHandlerInterface;
@@ -13,6 +14,7 @@ use WebServCo\Exception\Service\DefaultUncaughtExceptionHandler;
 
 final class DefaultExceptionHandlerFactory implements ExceptionHandlerFactoryInterface
 {
+    #[Override]
     public function createExceptionHandler(LoggerInterface $logger): ExceptionHandlerInterface
     {
         return new DefaultExceptionHandler($logger);

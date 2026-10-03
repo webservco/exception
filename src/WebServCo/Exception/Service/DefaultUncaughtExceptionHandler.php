@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace WebServCo\Exception\Service;
 
+use Override;
 use Throwable;
 use WebServCo\Exception\Contract\UncaughtExceptionHandlerInterface;
 
@@ -17,6 +18,7 @@ use const PHP_SAPI;
 final class DefaultUncaughtExceptionHandler extends AbstractExceptionHandler implements
     UncaughtExceptionHandlerInterface
 {
+    #[Override]
     public function handle(Throwable $throwable): void
     {
         $this->log($throwable);
